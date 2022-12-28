@@ -84,6 +84,15 @@ section .title {
     display: flex;
 }
 
+.home i {
+    font-size: 50px;
+    color: white;
+    padding: 20px;
+}
+
+.home .rounded-image {
+    margin-bottom: 30px;
+}
 .home .rounded-image .outer-circle {
     width: 200px;
     height: 200px;
@@ -146,12 +155,14 @@ section .title {
 }
 .services .services-content .card {
     width: calc(50% - 20px);
+    min-height: 300px;
     background-color: rgb(23, 124, 255);
     border-radius: 6px;
     border: 1px solid rgb(23, 124, 255);
     text-align: center;
     transition: all 0.3s ease;
     cursor: pointer;
+    position: relative;
 }
 
 .services .services-content .card .box{
@@ -181,9 +192,19 @@ section .title {
     color: #fff;
 }
 .services .services-content .card .text {
-    margin: 10px 7px 7px 7px;
+    margin: 10px 17px 10px 17px;
     font-size: 18px;
     color: #fff;
+}
+
+.services .services-content .card .text2 {
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    top: 25px;
+    
 }
 .services .services-content .card .address {
     margin-bottom: 10px;
@@ -220,6 +241,7 @@ section .title {
 
 .skills .skills-content .column .skill-list .skill {
     list-style: none;
+    font-size: 22px;
 }
 .skills .skills-content .column .description{
     font-size: 20px;
@@ -256,6 +278,10 @@ section .title {
     font-size: 28px;
     color: rgb(0, 208, 245);
     transition: all 0.3s ease;
+}
+
+.contact .contact-content .row .bigger {
+    font-size: 36px;
 }
 .contact .contact-content .row i:hover{
     transform: scale(1.5);
@@ -389,11 +415,16 @@ section .title {
 @media (max-width: 860px) {
     
     .home .home-content .text-2 {
-        font-size: 30px;
+        font-size: 50px;
     }
     .services .services-content .card {
         width: 100%;
         margin-bottom: 20px;
+        min-height: 250px;
+    }
+    .services .services-content .card .text,
+    .services .services-content .card .text2{
+        font-size: 16px;
     }
     .skills .skills-content .column {
         width: calc(50% - 10px);
@@ -408,7 +439,10 @@ section .title {
         font-size: 20px;
     }
     .home .home-content .text-2 {
-        font-size: 29px;
+        font-size: 40px;
+    }
+    .services .services-content .card {
+        min-height: 310px;
     }
 }
 
