@@ -8,12 +8,12 @@
     <script src="https://kit.fontawesome.com/5fe7501939.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
-    <title>Emilio Lopez-Gallo Caloca</title>
+    <title>Brandon Altamirano</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Brandon</span></a></div>
+            <div class="logo"><a href="#">Brandon</a></div>
             <ul class="menu">
                 <li><a href="#home" class="nav-item">Home</a></li>
                 <li><a href="#about" class="nav-item">About</a></li>
@@ -30,8 +30,15 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
+                <div class="rounded-image">
+                    <div class="outer-circle">
+                        <div class="inner-circle">
+                            <img class="circular-photo" src="./screenshot.png">
+                        </div>
+                    </div>
+                </div>
                 <div class="text-1">Hello, my name is</div>
-                <div class="text-2">Brandon Altamirano Ortega</div>
+                <div class="text-2">Brandon Altamirano</div>
             </div>
         </div>
     </section>
@@ -44,14 +51,14 @@
                     <img class="photo" src="./headshot.jpg">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Brandon and this picture is not me.</div>
-                    <p>This website is only used for practice and originally belonged to a close friend who
-                        decided he did not want a portfolio. However, he gave me permission to use his photo
-                        so people would not get confused with my original portfolio website. The links in the 
-                        next sections below lead to nothing. However, they were very nice to make and I chose
-                        to keep them due to the amount of work I put in to learn these skills. Feel free to 
-                        use this site as a personal practice project of mine which was the original purpose 
-                        anyway.
+                    <div class="text">I'm a Software Engineer.</div>
+                    <p>
+                        I'm a San Diego State University graduate in Computer Science and am specializing in Backend
+                        Web Development. I also have knowledge in Front-End using HTML5, CSS, JavaScript, and frameworks
+                        such as React. I am currently expanding my skills with backend frameworks including Node.js for JavaScript
+                        and Django for Python. My skills also include using hosting services such as Netlify, AWS, Azure, and 
+                        DigitalOcean. I also have practice in using NoSQL and SQL database tools. My current location is San Diego, California but am also available for remote services. 
+                        You may find my contact information in the section at the bottom of this page!
                     </p>
                 </div>
             </div>
@@ -60,27 +67,24 @@
 
     <section class="services" id="services">
         <div class="max-width">
-            <h2 class="title">Services</h2>
+            <h2 class="title">Projects</h2>
             <div class="services-content">
-                <div class="card">
+                <a href="https://futposts.net" target="_blank" class="card">
                     <div class="box">
-                    <i class="fa-solid fa-person-running"></i>
-                    <div class="service">Fitness</div>
-                    <div class="text">Personal fitness training sessions at some gym at some city.</div>
-                    <a>
-                        <i class="fa-solid fa-location-dot"></i>
-                    </a>    
-                    <div class="text">123 Address Ave, San Diego, CA 99999</div>
-                    </div>
-                </div>
+                        <i class="fa-regular fa-futbol"></i>
+                        <div class="service">Futposts</div>
+                        <p class="text">Social networking site to find soccer teams in need of players or vice versa. This includes club teams, pick-up games, or weekly leagues. Register, provide a description of yourself, and start searching! </p>
+                        <p class="text2">Tools used: Python, Django, HTML, CSS, Nginx, Gunicorn, MySQL, AWS EC2 Instance (Ubuntu)</p>
+                    </div>  
+                </a>
                 <div class="card">
-                    <div class="box">
-                        <i class="fa-solid fa-carrot"></i>
-                        <div class="service">Counseling</div>
-                        <div class="text">Nutritional consultation to lay out a healthy diet and improve fitness.</div>
-                        <a><i class="fa-solid fa-phone"></i></a>
-                        <div class="text">Click to call</div>
-                    </div>
+                    <a href="https://baltamirano-password-generator.netlify.app" target="_blanket" class="box">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="service">Password Generator</div>
+                        <p class="text">Generate a random password using filters or types of characters of your choice. For every filter checked your password will be provided with at least one character of the specified type.</p>
+                        <p class="text2">Tools Used: HTML, CSS, JavaScript, Netlify</p>
+                        
+                    </a>
                 </div>
             </div>
         </div>
@@ -89,20 +93,40 @@
     <section class="skills" id="skills">
         <div class="max-width">
             <h2 class="title">Skills</h2>
-            <h2 class="certificates">Education</h2>
             <div class="skills-content">
                 <div class="column">
-                    <div class="skill">Bachelor of Science Kinesiology</div>
-                    <div class="description">California State Polytechnic University, Pomona
-                    </div>
+                    <div class="skill-category"> Languages</div>
+                    <ul class="skill-list">
+                        <li class="skill">Python</li>
+                        <li class="skill">JavaScript</li>
+                        <li class="skill">Java</li>
+                        <li class="skill">C++</li>
+                        <li class="skill">HTML5</li>
+                        <li class="skill">CSS3</li>
+                    </ul>
                 </div>
                 <div class="column">
-                    <div class="skill">National Academy of Sports Medicine</div>
-                    <div class="description">Certified Personal Trainer</div>
+                    <div class="skill-category">Frameworks and Databases</div>
+                    <ul class="skill-list">
+                        <li class="skill">Django</li>
+                        <li class="skill">React</li>
+                        <li class="skill">Node.js</li>
+                        <li class="skill">SQL</li>
+                        <li class="skill">MySQL</li>
+                        <li class="skill">MongoDB</li>
+                    </ul>
                 </div>
                 <div class="column">
-                    <div class="skill">National Academy of Sports Medicine</div>
-                    <div class="description">Certified Nutrition Coach</div>
+                    <div class="skill-category">Other</div>
+                    <ul class="skill-list">
+                        <li class="skill">Ubuntu OS</li>
+                        <li class="skill">Azure DevOps</li>
+                        <li class="skill">AWS EC2 Instance/Elastic Beanstalk</li>
+                        <li class="skill">Nginx</li>
+                        <li class="skill">Gunicorn</li>
+                        <li class="skill">Git</li>
+                        <li class="skill"></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -118,7 +142,7 @@
                     <div class="icons">
                         <div class="row">
                             <a>
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt bigger"></i>
                             </a>
                             <div class="info">
                                 <div class="head">Location</div>
@@ -133,7 +157,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <a href="tel:+1650-851-1145"><i class="fa-solid fa-phone"></i></a>
+                            <a href="tel:+16198023753"><i class="fa-solid fa-phone"></i></a>
                             <div class="info">
                                 <div class="head">Phone</div>
                                 <div class="sub-title">(619) 802-3753</div>
