@@ -442,7 +442,8 @@ section .title {
         font-size: 40px;
     }
     .services .services-content .card {
-        min-height: 310px;
+        min-height: 400px;
+        
     }
 }
 
